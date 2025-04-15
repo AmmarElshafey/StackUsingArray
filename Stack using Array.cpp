@@ -1,5 +1,4 @@
-// Stack using Array.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Stack using Array.cpp :
 
 #include <iostream>
 using namespace std;
@@ -10,13 +9,13 @@ private :
     int size;
     int top;
 public :
-    Stack(int s)
+    Stack(int s) //Parameterized Constructor
     {
         size = s;
         arr = new int[size] ;
         top = -1;
     }
-    ~Stack()
+    ~Stack()  //Destructor
     {
         delete []arr;
     }
@@ -28,7 +27,7 @@ public :
     {
         return top == size-1;
     }
-    void Push(int value)
+    void Push(int value) //add element
     {
         if (IsFull())
         {
@@ -37,7 +36,7 @@ public :
         }
         arr[++top] = value;
     }
-    int Pop()
+    int Pop()  //Remove element with return it
     {
         if (IsEmpty())
         {
@@ -55,7 +54,8 @@ public :
         }
         return arr[top];
     }
-    void Clear() {
+    void Clear() 
+   {
         top = -1;
     }
 
