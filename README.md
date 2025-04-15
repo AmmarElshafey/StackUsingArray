@@ -7,4 +7,5 @@ This project is a simple implementation of a Stack Data Structure using arrays i
 - View Top Element
 - Clear Stack
 - Print Stack Contents
-
+## Author
+Ammar Said El-Shafey
